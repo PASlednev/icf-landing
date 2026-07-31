@@ -22,62 +22,10 @@
       href="https://icefishingstrategy.com/ice-fishing-casino/"
     />
 
-    <!-- English-only cluster for now. Localized alternates (pt-BR/es/id) added in the localization phase. -->
-    <link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-GB"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-CA"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-AU"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-NZ"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-ZA"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-IN"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-NG"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en-PH"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://icefishingstrategy.com/ice-fishing-casino/"
-    />
+    <!-- hreflang cluster: one tag per language + x-default. Same block on every version of this concept. -->
+    <link rel="alternate" hreflang="en" href="https://icefishingstrategy.com/ice-fishing-casino/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://icefishingstrategy.com/pt/ice-fishing-casino/" />
+    <link rel="alternate" hreflang="x-default" href="https://icefishingstrategy.com/ice-fishing-casino/" />
 
     <link rel="icon" href="../assets/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
@@ -230,6 +178,22 @@
           <a href="../ice-fishing-casino/">Where to Play</a>
         </nav>
         <div class="nav__actions">
+          <div class="lang">
+            <button
+              class="lang__btn"
+              id="lang-btn"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="lang-menu"
+            >
+              EN <span class="lang__caret" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="lang__menu" id="lang-menu" hidden>
+              <a href="./" hreflang="en" aria-current="true">EN</a>
+              <a href="../pt/ice-fishing-casino/" hreflang="pt-BR">PT</a>
+            </div>
+          </div>
           <a
             href="[INSERT: offer link]"
             target="_blank"

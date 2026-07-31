@@ -18,23 +18,10 @@
     <meta name="theme-color" content="#0b1a28" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="canonical" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-
-    <!-- English-only cluster for now. Localized alternates (pt-BR/es/id) added in the localization phase. -->
-    <link rel="alternate" hreflang="en-US" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-GB" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-CA" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-AU" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-NZ" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-ZA" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-IN" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-NG" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link rel="alternate" hreflang="en-PH" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
+    <!-- hreflang cluster: one tag per language + x-default. Same block on every version of this concept. -->
     <link rel="alternate" hreflang="en" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://icefishingstrategy.com/is-ice-fishing-legit/"
-    />
+    <link rel="alternate" hreflang="pt-BR" href="https://icefishingstrategy.com/pt/is-ice-fishing-legit/" />
+    <link rel="alternate" hreflang="x-default" href="https://icefishingstrategy.com/is-ice-fishing-legit/" />
 
     <link rel="icon" href="../assets/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
@@ -168,6 +155,22 @@
           <a href="../ice-fishing-casino/">Where to Play</a>
         </nav>
         <div class="nav__actions">
+          <div class="lang">
+            <button
+              class="lang__btn"
+              id="lang-btn"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="lang-menu"
+            >
+              EN <span class="lang__caret" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="lang__menu" id="lang-menu" hidden>
+              <a href="./" hreflang="en" aria-current="true">EN</a>
+              <a href="../pt/is-ice-fishing-legit/" hreflang="pt-BR">PT</a>
+            </div>
+          </div>
           <a
             href="[INSERT: offer link]"
             target="_blank"
