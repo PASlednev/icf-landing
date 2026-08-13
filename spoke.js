@@ -72,7 +72,11 @@
     });
   }
 
-  function init() { initBurger(); initScroll(); initReveal(); initLang(); }
+  function init() {
+    [initBurger, initScroll, initReveal, initLang].forEach(function (fn) {
+      try { fn(); } catch (e) { /* keep other features working */ }
+    });
+  }
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
